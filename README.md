@@ -1,5 +1,3 @@
-# micro-book
-
 Go 微服务项目，涵盖从语法基础到完整微服务架构的全栈实践。
 
 ## 项目结构
@@ -162,3 +160,4 @@ make grpc
 | `cronjob/` | 定时任务调度 |
 | `wire/` | Google Wire 依赖注入 |
 | `context/` | Go Context 使用 |
+
