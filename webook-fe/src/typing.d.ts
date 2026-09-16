@@ -1,0 +1,1 @@
+declare const BACKEND_BASE_URL: 'http://69.165.72.174:8080';

@@ -1,0 +1,97 @@
+//go:build wireinject
+
+package main
+
+import (
+	repository2 "golang/webook/interactive/repository"
+	cache2 "golang/webook/interactive/repository/cache"
+	dao2 "golang/webook/interactive/repository/dao"
+	service2 "golang/webook/interactive/service"
+	"golang/webook/internal/events/article"
+	"golang/webook/internal/repository"
+	article2 "golang/webook/internal/repository/article"
+	"golang/webook/internal/repository/cache"
+	"golang/webook/internal/repository/dao"
+	article3 "golang/webook/internal/repository/dao/article"
+	"golang/webook/internal/service"
+	"golang/webook/internal/web"
+	ijwt "golang/webook/internal/web/jwt"
+	"golang/webook/ioc"
+
+	"github.com/google/wire"
+)
+
+var interactiveSvcProvider = wire.NewSet(
+	service2.NewInteractiveService,
+	repository2.NewCachedInteractiveRepository,
+	dao2.NewGORMInteractiveDAO,
+	cache2.NewRedisInteractiveCache,
+)
+
+var rankingServiceSet = wire.NewSet(
+	repository.NewCachedRankingRepository,
+	cache.NewRankingRedisCache,
+	cache.NewRankingLocalCache,
+	service.NewBatchRankingService,
+)
+
+func InitWebServer() *App {
+	wire.Build(
+		// 最基础的第三方依赖
+		ioc.InitDB, ioc.InitRedis, ioc.InitRLockClient,
+		ioc.InitLogger,
+		ioc.InitKafka,
+		ioc.NewConsumers,
+		ioc.NewSyncProducer,
+
+		// 流量控制用的
+		//interactiveSvcProvider,
+		//ioc.InitIntrGRPCClient,
+
+		// 放一起，启用了 etcd 作为配置中心
+		ioc.InitEtcd,
+		ioc.InitIntrGRPCClientV1,
+		rankingServiceSet,
+		ioc.InitJobs,
+		ioc.InitRankingJob,
+
+		// consumer
+		article.NewKafkaProducer,
+
+		// 初始化 DAO
+		dao.NewUserDAO,
+		article3.NewGORMArticleDAO,
+
+		cache.NewUserCache,
+		cache.NewCodeCache,
+		cache.NewRedisArticleCache,
+
+		repository.NewUserRepository,
+		repository.NewCodeRepository,
+		article2.NewArticleRepository,
+
+		service.NewUserService,
+		service.NewCodeService,
+		service.NewArticleService,
+
+		// 直接基于内存实现
+		ioc.InitSMSService,
+		ioc.InitWechatService,
+
+		web.NewUserHandler,
+		web.NewArticleHandler,
+		web.NewOAuth2WechatHandler,
+		//ioc.NewWechatHandlerConfig,
+		ijwt.NewRedisJWTHandler,
+		// 你中间件呢？
+		// 你注册路由呢？
+		// 你这个地方没有用到前面的任何东西
+		//gin.Default,
+
+		ioc.InitWebServer,
+		ioc.InitMiddlewares,
+		// 组装我这个结构体的所有字段
+		wire.Struct(new(App), "*"),
+	)
+	return new(App)
+}

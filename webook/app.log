@@ -1,0 +1,177 @@
+nohup: ignoring input
+2026-06-19T09:08:42.238+0800	INFO	webook/main.go:69	hello，你搞好了
+2026-06-19T09:08:42.238+0800	INFO	webook/main.go:74	这是实验参数	{"error": "这是一个 error", "id": 123, "一个结构体": {"name":"hello"}}
+[4/4]0x3c45a5029940
+2026-06-19T09:08:42.253+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/usr/local/go/src/sync/once.go:78",4.882186,"-","SHOW STATUS"]}
+2026-06-19T09:08:42.264+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",4.553615,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.276+0800	DEBUG	logger/zap_logger.go:16	%s %s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10","SLOW SQL >= 10ms",11.79957,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.285+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",9.639053,"-","SELECT count(*) FROM information_schema.tables WHERE table_schema = ? AND table_name = ? AND table_type = ?"]}
+2026-06-19T09:08:42.287+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.819939,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.288+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.989455,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.289+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.487091,"-","SELECT * FROM `users` LIMIT 1"]}
+2026-06-19T09:08:42.303+0800	DEBUG	logger/zap_logger.go:16	%s %s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10","SLOW SQL >= 10ms",14.106029,"-","SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = ? AND table_name = ? ORDER BY ORDINAL_POSITION"]}
+2026-06-19T09:08:42.304+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.32605,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.305+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.911287,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.307+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.659622,"-","SELECT count(*) FROM information_schema.tables WHERE table_schema = ? AND table_name = ? AND table_type = ?"]}
+2026-06-19T09:08:42.307+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.295843,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.308+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.80901,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.309+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.561292,"-","SELECT * FROM `articles` LIMIT 1"]}
+2026-06-19T09:08:42.311+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.966434,"-","SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = ? AND table_name = ? ORDER BY ORDINAL_POSITION"]}
+2026-06-19T09:08:42.312+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.258772,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.313+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.800209,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.320+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",6.413396,"-","SELECT count(*) FROM information_schema.statistics WHERE table_schema = ? AND table_name = ? AND index_name = ?"]}
+2026-06-19T09:08:42.320+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.215854,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.321+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.81572,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.323+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.678447,"-","SELECT count(*) FROM information_schema.tables WHERE table_schema = ? AND table_name = ? AND table_type = ?"]}
+2026-06-19T09:08:42.323+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.213297,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.324+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.776098,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.325+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.518045,"-","SELECT * FROM `published_articles` LIMIT 1"]}
+2026-06-19T09:08:42.327+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.926787,"-","SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = ? AND table_name = ? ORDER BY ORDINAL_POSITION"]}
+2026-06-19T09:08:42.327+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.209662,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.328+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.81348,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.330+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.440973,"-","SELECT count(*) FROM information_schema.statistics WHERE table_schema = ? AND table_name = ? AND index_name = ?"]}
+2026-06-19T09:08:42.330+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.182644,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.331+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.829844,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.332+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.535725,"-","SELECT count(*) FROM information_schema.tables WHERE table_schema = ? AND table_name = ? AND table_type = ?"]}
+2026-06-19T09:08:42.333+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.262843,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.334+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.799291,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.334+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.542525,"-","SELECT * FROM `interactives` LIMIT 1"]}
+2026-06-19T09:08:42.336+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.818094,"-","SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = ? AND table_name = ? ORDER BY ORDINAL_POSITION"]}
+2026-06-19T09:08:42.337+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.242897,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.338+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.858103,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.339+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.492861,"-","SELECT count(*) FROM information_schema.statistics WHERE table_schema = ? AND table_name = ? AND index_name = ?"]}
+2026-06-19T09:08:42.340+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.201203,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.341+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.76465,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.342+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.524725,"-","SELECT count(*) FROM information_schema.tables WHERE table_schema = ? AND table_name = ? AND table_type = ?"]}
+2026-06-19T09:08:42.343+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.307328,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.344+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.907721,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.344+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.513045,"-","SELECT * FROM `user_like_bizs` LIMIT 1"]}
+2026-06-19T09:08:42.346+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.875472,"-","SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = ? AND table_name = ? ORDER BY ORDINAL_POSITION"]}
+2026-06-19T09:08:42.347+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.226522,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.348+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.770536,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.349+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.484537,"-","SELECT count(*) FROM information_schema.statistics WHERE table_schema = ? AND table_name = ? AND index_name = ?"]}
+2026-06-19T09:08:42.350+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.23807,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.351+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.810542,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.352+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.501759,"-","SELECT count(*) FROM information_schema.tables WHERE table_schema = ? AND table_name = ? AND table_type = ?"]}
+2026-06-19T09:08:42.353+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.242313,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.353+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.844635,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.354+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.462682,"-","SELECT * FROM `collections` LIMIT 1"]}
+2026-06-19T09:08:42.356+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.704929,"-","SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = ? AND table_name = ? ORDER BY ORDINAL_POSITION"]}
+2026-06-19T09:08:42.356+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.247819,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.357+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.846804,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.359+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.470874,"-","SELECT count(*) FROM information_schema.tables WHERE table_schema = ? AND table_name = ? AND table_type = ?"]}
+2026-06-19T09:08:42.359+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.338026,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.360+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.837966,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.361+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.5022,"-","SELECT * FROM `user_collection_bizs` LIMIT 1"]}
+2026-06-19T09:08:42.363+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.835774,"-","SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = ? AND table_name = ? ORDER BY ORDINAL_POSITION"]}
+2026-06-19T09:08:42.363+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.203207,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.364+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.831573,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.366+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.459169,"-","SELECT count(*) FROM information_schema.statistics WHERE table_schema = ? AND table_name = ? AND index_name = ?"]}
+2026-06-19T09:08:42.366+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.223222,"-","SELECT DATABASE()"]}
+2026-06-19T09:08:42.367+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",0.794318,1,"SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'webook%' ORDER BY SCHEMA_NAME='webook' DESC,SCHEMA_NAME limit 1"]}
+2026-06-19T09:08:42.369+0800	DEBUG	logger/zap_logger.go:16	%s
+[%.3fms] [rows:%v] %s	{"args": ["/home/learn/webook/internal/repository/dao/init.go:10",1.445324,"-","SELECT count(*) FROM information_schema.statistics WHERE table_schema = ? AND table_name = ? AND index_name = ?"]}
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /users/profile            --> golang/webook/internal/web.(*UserHandler).ProfileJWT-fm (6 handlers)
+[GIN-debug] POST   /users/signup             --> golang/webook/internal/web.(*UserHandler).SignUp-fm (6 handlers)
+[GIN-debug] POST   /users/login              --> golang/webook/internal/web.(*UserHandler).LoginJWT-fm (6 handlers)
+[GIN-debug] POST   /users/logout             --> golang/webook/internal/web.(*UserHandler).LogoutJWT-fm (6 handlers)
+[GIN-debug] POST   /users/edit               --> golang/webook/internal/web.(*UserHandler).Edit-fm (6 handlers)
+[GIN-debug] POST   /users/login_sms/code/send --> golang/webook/internal/web.(*UserHandler).SendLoginSMSCode-fm (6 handlers)
+[GIN-debug] POST   /users/login_sms          --> golang/webook/internal/web.(*UserHandler).LoginSMS-fm (6 handlers)
+[GIN-debug] POST   /users/refresh_token      --> golang/webook/internal/web.(*UserHandler).RefreshToken-fm (6 handlers)
+[GIN-debug] POST   /articles/edit            --> golang/webook/internal/web.(*ArticleHandler).Edit-fm (6 handlers)
+[GIN-debug] POST   /articles/withdraw        --> golang/webook/internal/web.(*ArticleHandler).Withdraw-fm (6 handlers)
+[GIN-debug] POST   /articles/publish         --> golang/webook/internal/web.(*ArticleHandler).Publish-fm (6 handlers)
+[GIN-debug] POST   /articles/list            --> golang/webook/internal/web.(*ArticleHandler).RegisterRoutes.WrapBodyAndToken[...].func2 (6 handlers)
+[GIN-debug] GET    /articles/detail/:id      --> golang/webook/internal/web.(*ArticleHandler).RegisterRoutes.WrapToken[...].func3 (6 handlers)
+[GIN-debug] GET    /articles/pub/:id         --> golang/webook/internal/web.(*ArticleHandler).RegisterRoutes.func1 (7 handlers)
+[GIN-debug] POST   /articles/pub/like        --> golang/webook/internal/web.(*ArticleHandler).RegisterRoutes.WrapBodyAndToken[...].func4 (6 handlers)
+[GIN-debug] GET    /oauth2/wechat/authurl    --> golang/webook/internal/web.(*OAuth2WechatHandler).AuthURL-fm (6 handlers)
+[GIN-debug] GET    /oauth2/wechat/callback   --> golang/webook/internal/web.(*OAuth2WechatHandler).Callback-fm (6 handlers)
+[GIN-debug] POST   /oauth2/wechat/callback   --> golang/webook/internal/web.(*OAuth2WechatHandler).Callback-fm (6 handlers)
+[GIN-debug] PUT    /oauth2/wechat/callback   --> golang/webook/internal/web.(*OAuth2WechatHandler).Callback-fm (6 handlers)
+[GIN-debug] PATCH  /oauth2/wechat/callback   --> golang/webook/internal/web.(*OAuth2WechatHandler).Callback-fm (6 handlers)
+[GIN-debug] HEAD   /oauth2/wechat/callback   --> golang/webook/internal/web.(*OAuth2WechatHandler).Callback-fm (6 handlers)
+[GIN-debug] OPTIONS /oauth2/wechat/callback   --> golang/webook/internal/web.(*OAuth2WechatHandler).Callback-fm (6 handlers)
+[GIN-debug] DELETE /oauth2/wechat/callback   --> golang/webook/internal/web.(*OAuth2WechatHandler).Callback-fm (6 handlers)
+[GIN-debug] CONNECT /oauth2/wechat/callback   --> golang/webook/internal/web.(*OAuth2WechatHandler).Callback-fm (6 handlers)
+[GIN-debug] TRACE  /oauth2/wechat/callback   --> golang/webook/internal/web.(*OAuth2WechatHandler).Callback-fm (6 handlers)
+[GIN-debug] GET    /test/metric              --> golang/webook/internal/web.(*ObservabilityHandler).RegisterRoutes.func1 (6 handlers)
+[GIN-debug] GET    /hello                    --> main.main.func1 (6 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [ERROR] listen tcp :8080: bind: address already in use

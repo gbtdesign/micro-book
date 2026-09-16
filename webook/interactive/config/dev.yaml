@@ -1,0 +1,27 @@
+db:
+  src:
+    dsn: "root:root@tcp(localhost:13316)/webook"
+  dst:
+    dsn: "root:root@tcp(localhost:13316)/webook_intr"
+
+migrator:
+  pattern: "SRC_ONLY"
+  web:
+    addr: ":8082"
+
+redis:
+  addr: "localhost:6379"
+
+kafka:
+  addrs:
+    - "localhost:9094"
+
+grpc:
+  server:
+    port: 8090
+    etcdAddrs:
+      - "localhost:12379"
+#  client:
+#    user:
+#      addr: "user.mycompany.com:8090"
+#    intr:
